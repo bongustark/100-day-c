@@ -1,0 +1,11 @@
+/* Write a program to print the product of even numbers from 1 to n. */
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    if (scanf("%d", &n) != 1 || n < 0)return 1;
+    unsigned long long product = 1;
+    for (int i = 2; i <= n; i += 2)product *= (unsigned)i;
+    printf("%llu\n", product);
+    return 0;
+}
